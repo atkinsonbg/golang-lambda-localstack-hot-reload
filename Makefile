@@ -3,3 +3,6 @@ start:
 
 stop:
 	docker-compose down
+
+build:
+	go build -o go-lambda
