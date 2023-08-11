@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   localstack:
+    container_name: localstack
     image: localstack/localstack:2.1.0
     ports:
       - "127.0.0.1:4566:4566"            # LocalStack Gateway
@@ -13,6 +14,7 @@ services:
       - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
   dozzle:
+    container_name: dozzle
     image: amir20/dozzle:latest
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"

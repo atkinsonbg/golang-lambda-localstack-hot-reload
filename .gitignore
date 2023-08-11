@@ -518,6 +518,9 @@ $RECYCLE.BIN/
 **/.localstack
 volume/**
 
+### Demo Code ###
+# items generated during build and deploy
+main
+myFunction.zip
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,go,goland,goland+iml,goland+all,jetbrains,jetbrains+iml,jetbrains+all,visualstudiocode
-golang-lambda-localstack-hot-reload
-go-lambda
